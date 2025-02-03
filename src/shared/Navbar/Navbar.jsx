@@ -8,7 +8,7 @@ const Navbar = () => {
             <div className='flex items-center justify-between'>
                 {/* logo  */}
                 <div>
-                    <img src='/public/assets/images/nav_logo.png' alt='nav logo' width={114} height={35} />
+                    <img src='/assets/images/nav_logo.png' alt='nav logo' width={114} height={35} />
                 </div>
                 {/* menu  */}
                 <div className='hidden md:block'>
