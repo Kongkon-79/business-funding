@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "img": "/assets/images/wwag1.png",
+        "title": "Direct Lender",
+        "description": "As a direct lender, Capitalized offers speed, flexibility, and the lending power necessary to meet your funding needs."
+    },
+    {
+        "id": 2,
+        "img": "/assets/images/wwag2.png",
+        "title": "Automated Application ",
+        "description": "Their fully automated online application allows for approvals within five minutes, streamlining the funding "
+    },
+    {
+        "id": 3,
+        "img": "/assets/images/wwag3.png",
+        "title": "Rapid Funding",
+        "description": "Once approved, funds are wired to your bank account within 24 hours, ensuring quick access to capital."
+    }
+]
