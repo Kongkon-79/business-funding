@@ -4,7 +4,7 @@ import Button from '../../../common/Button';
 
 const Banner = () => {
     return (
-        <div className='banner__bg'>
+        <div className='banner__bg roboto_font'>
             <div className='h-full flex flex-col items-center justify-center'>
                 <h1 className='text-[48px] font-bold leading-[60px] text-primary text-center'>Obtaining working capital for your <br />
                     business has never been easier.</h1>

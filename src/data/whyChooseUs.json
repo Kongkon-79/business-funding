@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "img": "/assets/images/whu1.png",
+        "title": "Fast & Hassle Free Funding"
+    },
+    {
+        "id": 2,
+        "img": "/assets/images/whu2.png",
+        "title": "Flexible Financing Solutions"
+    },
+    {
+        "id": 3,
+        "img": "/assets/images/whu3.png",
+        "title": "High Approval Rates"
+    },
+    {
+        "id": 4,
+        "img": "/assets/images/whu4.png",
+        "title": "Trusted by Thousands of Businesses"
+    },
+    {
+        "id": 5,
+        "img": "/assets/images/whu5.png",
+        "title": "Secure & Reliable"
+    },
+    {
+        "id": 6,
+        "img": "/assets/images/whu6.png",
+        "title": "Total Transparency"
+    }
+]
