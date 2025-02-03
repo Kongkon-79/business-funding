@@ -4,10 +4,10 @@ import Button from '../../../common/Button';
 const EligibilityCriteria = () => {
     return (
         <div className='bg-primary/10'>
-            <div className='container roboto_font'>
+            <div className='px-4 md:px-[50px] lg:px-[100px] xl:px-[150px] 2xl:px-[212px] roboto_font'>
                 <div className='grid grid-cols-1 md:grid-cols-10 gap-[38px] pt-[55px] pb-[60px]'>
                     <div className='md:col-span-3'>
-                        <h5 className='text-[32px] font-medium leading-[30px] text-primary'>Eligibility Criteria</h5>
+                        <h5 className='text-[24px] md:text-[28px] lg:text-[32px] font-medium leading-[30px] text-primary'>Eligibility Criteria</h5>
                         <p className='text-base font-medium leading-[20px] text-secondary/70 pt-[16px]'>To qualify for funding, businesses should
                             meet the following minimum requirements:</p>
                         <div className='pt-[32px]'>

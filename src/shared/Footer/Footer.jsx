@@ -4,10 +4,10 @@ import { Facebook, Instagram, Linkedin } from 'lucide-react';
 
 const Footer = () => {
     return (
-        <div className='container padding_top roboto_font pb-[69px]'>
-            <div className='flex items-center justify-between'>
-                <h5 className='text-[32px] font-normal leading-[40px] text-primary'>Meet Capitalized, obtaining <br />
-                    working capital for your <br />
+        <div className='px-4 md:px-[50px] lg:px-[100px] xl:px-[150px] 2xl:px-[212px] padding_top roboto_font pb-[69px]'>
+            <div className='flex flex-col md:flex-row items-center justify-between gap-8 md:gap-0'>
+                <h5 className='text-[24px] md:text-[28px] lg:text-[32px] font-normal leading-[26px] md:leading-[32px] lg:leading-[40px] text-primary'>Meet Capitalized, obtaining <br className='hidden lg:block'/>
+                    working capital for your <br className='hidden lg:block'/>
                     business has never been easier.</h5>
                 <div>
                     <Button />

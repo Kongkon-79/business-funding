@@ -2,13 +2,13 @@ import React from 'react';
 
 const Online = () => {
     return (
-        <div className='container padding_top roboto_font'>
+        <div className='px-4 md:px-[50px] lg:px-[100px] xl:px-[150px] 2xl:px-[212px] padding_top roboto_font'>
             <div className='grid grid-cols-1 md:grid-cols-2 gap-[81px]'>
                 <div className='md:col-span-1'>
                     <img src='/assets/images/online.png' alt='online' width={476} height={376} />
                 </div>
                 <div className='md:col-span-1 flex flex-col justify-center items-start'>
-                    <h2 className='text-[40px] font-semibold leading-[48px] text-primary'>Online doesn't have to be
+                    <h2 className='text-[26px] md:text-[32px] lg:text-[40px] font-semibold leading-[30px] md:leading-[40px] lg:leading-[48px] text-primary'>Online doesn't have to be
                         impersonal - with
                         Capitalized you get real
                         people to talk to.</h2>
