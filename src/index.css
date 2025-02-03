@@ -14,3 +14,10 @@ body {
 .container {
     @apply px-[4px] md:px-[50px] lg:px-[80px] xl:px-[100px] 2xl:px-[212px] mx-auto;
 }
+
+.padding_top{
+    @apply pt-10 2xl:pt-[110px]
+}
+.padding_all{
+    @apply py-10 2xl:py-[110px]
+}
