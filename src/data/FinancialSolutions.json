@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "title" : "Business Loans:",
+        "desc1" : "Fast approval & flexible repayment terms.",
+        "desc2" : "Ideal for startups & growing businesses."
+    },
+    {
+        "id": 2,
+        "title" : "Line of Credit",
+        "desc1" : "Access funds as needed, only pay interest on what you use.",
+        "desc2" : "Great for managing cash flow & unexpected expenses."
+    },
+    {
+        "id": 3,
+        "title" : "Invoice Financing",
+        "desc1" : "Convert unpaid invoices into instant cash.",
+        "desc2" : "Best for businesses with outstanding invoices"
+    },
+    {
+        "id": 4,
+        "title" : "Merchant Cash Advance:",
+        "desc1" : "Quick cash in exchange for a percentage of future sales.",
+        "desc2" : "Ideal for businesses with strong daily transactions."
+    },
+    {
+        "id": 5,
+        "title" : "Equipment Financing:",
+        "desc1" : "Get finding to purchase essential business equipmnet.",
+        "desc2" : "No large upfront costs, fixed monthly payments."
+    },
+    {
+        "id": 6,
+        "title" : "Venture Capital & Investor Funding:",
+        "desc1" : "Equity-based funding for high-growth businesses.",
+        "desc2" : "Best for startups & innovative ventures."
+    }
+]
