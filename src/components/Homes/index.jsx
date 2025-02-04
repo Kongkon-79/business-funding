@@ -7,6 +7,7 @@ import EligibilityCriteria from './EligibilityCriteria/EligibilityCriteria';
 import Online from './Online/Online';
 import FinancialSolutions from './FinancialSolutions/FinancialSolutions';
 import Services from './Services/Services';
+import { CustomerReviews } from './ReviewDemo/ReviewDemo';
 
 const HomeAllComponents = () => {
     return (
@@ -21,6 +22,10 @@ const HomeAllComponents = () => {
 
             <section>
                 <FinancialSolutions />
+            </section>
+            
+            <section>
+                <CustomerReviews />
             </section>
 
             <section>
