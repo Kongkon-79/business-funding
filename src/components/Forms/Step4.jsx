@@ -20,7 +20,7 @@ const Step4 = ({handleNextStep, handlePreviousStep}) => {
               <input
                 type="radio"
                 value="yes"
-                {...register("payment", { required: "Please select an option" })}
+                {...register("payment", { required: true })}
                 className="w-5 h-5 accent-primary"
               />
               Yes
@@ -31,7 +31,7 @@ const Step4 = ({handleNextStep, handlePreviousStep}) => {
               <input
                 type="radio"
                 value="no"
-                {...register("payment", { required: "Please select an option" })}
+                {...register("payment", { required: true })}
                 className="w-5 h-5 accent-primary"
               />
               No
@@ -39,7 +39,7 @@ const Step4 = ({handleNextStep, handlePreviousStep}) => {
           </div>
 
           {errors?.payment && (
-            <p className="text-sm text-red-500 mt-2">{errors.payment.message}</p>
+            <p className="text-sm text-red-500 mt-2">This field is required</p>
           )}
           {/* buttton  */}
           <div className='flex justify-between items-center pt-[40px]'>

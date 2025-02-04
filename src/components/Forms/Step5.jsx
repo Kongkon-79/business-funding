@@ -5,14 +5,38 @@ import { HiArrowNarrowLeft } from "react-icons/hi";
 const Step5 = ({handleNextStep, handlePreviousStep}) => {
   const { register, formState: { errors } } = useFormContext();
 
-  // Sample business names (modify as needed)
+
   const scoreNames = [
-    "ABC Enterprises",
-    "XYZ Solutions",
-    "Tech Innovators",
-    "Creative Designs LLC",
-    "Fast Track Logistics",
-    "Other",
+    {
+      id : 1,
+      name : "Excellent (720 +)",
+      value : "excellent"
+    },
+    {
+      id : 2,
+      name : "Great (680 - 719)",
+      value : "great"
+    },
+    {
+      id : 3,
+      name : "Average (650 - 679)",
+      value : "average"
+    },
+    {
+      id : 4,
+      name : "Fair (600 - 649)",
+      value : "fair"
+    },
+    {
+      id : 5,
+      name : "Not so great (550 - 599)",
+      value : "not-so-great"
+    },
+    {
+      id : 6,
+      name : "Poor (549 or less)",
+      value : "poor"
+    },
   ];
 
   return (
@@ -25,21 +49,21 @@ const Step5 = ({handleNextStep, handlePreviousStep}) => {
           </label>
 
           <select
-            {...register("score", { required: "Score is required" })}
+            {...register("score", { required: true })}
             className="w-full py-[12px] px-[16px] border-[1px] rounded-[4px] bg-primary text-white outline-white mt-[16px]"
           >
             <option value="" disabled selected>
               Select One
             </option>
-            {scoreNames.map((name, index) => (
-              <option key={index} value={name}>
-                {name}
+            {scoreNames.map((data) => (
+              <option key={data.id} value={data.value}>
+                {data.name}
               </option>
             ))}
           </select>
 
           {errors?.score && (
-            <p className="text-sm text-red-500 mt-2">{errors.score.message}</p>
+            <p className="text-sm text-red-500 mt-2">This field is required</p>
           )}
           {/* buttton  */}
           <div className='flex justify-between items-center pt-[61px]'>

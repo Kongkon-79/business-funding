@@ -10,12 +10,13 @@ const BusinessStep = ({ handleNextStep, handlePreviousStep }) => {
         <div className="w-3/5 pl-[47px] pr-[65px]">
           <label className='text-2xl font-medium leading-[24px] text-white' htmlFor="businessName">What is the legal name of your business?</label>
           <input
-            {...register("businessName", { required: "Business name is required" })}
+          type='text'
+            {...register("businessName", { required: true })}
             placeholder="Enter business name"
             className="w-full py-[12px] px-[16px] border-[1px] rounded-[4px] bg-primary text-white outline-white mt-[16px]"
           />
           {errors?.businessName && (
-            <p className="text-sm text-red-500">{errors.businessName.message}</p>
+            <p className="text-sm text-red-500">This field is required</p>
           )}
           {/* buttton  */}
           <div className='pt-[61px] flex items-center justify-center'>

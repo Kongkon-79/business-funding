@@ -11,12 +11,13 @@ const Step3 = ({handleNextStep, handlePreviousStep}) => {
         <div className="w-3/5 pl-[47px] pr-[65px]">
           <label className='text-2xl font-medium leading-[24px] text-white' htmlFor="revenue">What is your average monthly revenue?</label>
           <input
-            {...register("revenue", { required: "Revenue is required" })}
+            {...register("revenue", { required: true })}
+            type='number'
             placeholder="$25,000"
             className="w-full py-[12px] px-[16px] border-[1px] rounded-[4px] bg-primary text-white outline-white mt-[16px]"
           />
           {errors?.revenue && (
-            <p className="text-sm text-red-500">{errors.revenue.message}</p>
+            <p className="text-sm text-red-500">This field is required</p>
           )}
           {/* buttton  */}
           <div className='flex justify-between items-center pt-[61px]'>
