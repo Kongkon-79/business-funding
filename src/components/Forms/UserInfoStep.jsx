@@ -1,7 +1,7 @@
 import React from 'react';
 import { useFormContext } from 'react-hook-form';
 
-const UserInfoStep = () => {
+const UserInfoStep = ({ handleNextStep, handlePreviousStep }) => {
   const { register, formState: { errors } } = useFormContext();
 
   return (
@@ -29,10 +29,14 @@ const UserInfoStep = () => {
             {errors?.phoneNumber && (
               <p className="text-sm text-red-500">{errors.phoneNumber.message}</p>
             )}
+            {/* buttton  */}
+            <div className='pt-[61px] flex items-center justify-center'>
+              <button type='button' onClick={handleNextStep} className='w-full text-base font-normal leading-[20px] bg-white text-primary py-[14px] px-[170px] rounded-[4px]'>Continue</button>
+            </div>
           </div>
         </div>
         <div className="w-2/5">
-          <img src="/assets/images/user_info.png" alt="user info" width={409} height={551} className='w-full'/>
+          <img src="/assets/images/user_info.png" alt="user info" width={409} height={551} className='w-full' />
         </div>
       </div>
     </div>
@@ -41,4 +45,3 @@ const UserInfoStep = () => {
 
 export default UserInfoStep;
 
-  

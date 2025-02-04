@@ -3,6 +3,7 @@ import Main from "../layout/Main";
 import Error from "../pages/Error";
 import AboutUs from "../pages/AboutUs";
 import Home from "../pages/Home";
+import MultiStepForm from "../components/Forms/MultiStepForm";
 
 const router = createBrowserRouter([
     {
@@ -16,6 +17,10 @@ const router = createBrowserRouter([
             {
                 path : '/about-us',
                 element : <AboutUs/>
+            },
+            {
+                path : '/touch-to-funded',
+                element : <MultiStepForm/>
             },
             {
                 path : "*",

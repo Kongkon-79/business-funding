@@ -5,61 +5,65 @@ import OwnerStep from './OwnerStep';
 import UserInfoStep from './UserInfoStep';
 import FinishStep from './FinishStep';
 import ProgressSteps from './ProgressSteps';
+import Step1 from './Step1';
+import Step2 from './Step2';
+import Step3 from './Step3';
+import Step4 from './Step4';
+import Step5 from './Step5';
+import Step6 from './Step6';
 
 const MultiStepForm = () => {
   const methods = useForm();
   const [currentStep, setCurrentStep] = useState(1);
 
-  // Handle step change
+  // Handle next step change
   const handleNextStep = () => {
     setCurrentStep((prevStep) => prevStep + 1);
+  };
+  // Handle previous step change
+  const handlePreviousStep = () => {
+    setCurrentStep((prevStep) => prevStep - 1);
   };
 
   // Handle form submission
   const onSubmit = (data) => {
-    console.log(data); // Handle your form submission logic here
+    console.log(data); 
   };
 
   return (
     <div className="container">
       <FormProvider {...methods}>
-        <div className="mb-6"> {/* Added margin to give space for the ProgressSteps */}
+        <div className="mb-6"> 
           <ProgressSteps
             currentStep={currentStep}
             steps={[
-              { id: 1, name: "Business" },
-              { id: 2, name: "Owner" },
-              { id: 3, name: "User Info" },
-              { id: 4, name: "Finish" }
+              { id: 1, name: "" },
+              { id: 2, name: "" },
+              { id: 3, name: "" },
+              { id: 4, name: "" },
+              { id: 5, name: "" },
+              { id: 6, name: "" },
+              { id: 7, name: "Business" },
+              { id: 8, name: "Owner" },
+              { id: 9, name: "User Info" },
+              { id: 10, name: "Finish" }
             ]}
           />
         </div>
         
         <div className='px-4 md:px-[50px] lg:px-[100px] xl:px-[150px] 2xl:px-[212px] 3xl:px-[230] 4xl:px-[260px] 5xl:px-[285px]'>
         <form onSubmit={methods.handleSubmit(onSubmit)} className="mt-6 bg-primary rounded-l-[12px]">
-          {currentStep === 1 && <BusinessStep/>}
-          {currentStep === 2 && <OwnerStep />}
-          {currentStep === 3 && <UserInfoStep />}
-          {currentStep === 4 && <FinishStep />}
+          {currentStep === 1 && <Step1 handleNextStep={handleNextStep} handlePreviousStep={handlePreviousStep} />}
+          {currentStep === 2 && <Step2 handleNextStep={handleNextStep} handlePreviousStep={handlePreviousStep} />}
+          {currentStep === 3 && <Step3 handleNextStep={handleNextStep} handlePreviousStep={handlePreviousStep} />}
+          {currentStep === 4 && <Step4 handleNextStep={handleNextStep} handlePreviousStep={handlePreviousStep} />}
+          {currentStep === 5 && <Step5 handleNextStep={handleNextStep} handlePreviousStep={handlePreviousStep} />}
+          {currentStep === 6 && <Step6 handleNextStep={handleNextStep} handlePreviousStep={handlePreviousStep} />}
+          {currentStep === 7 && <BusinessStep handleNextStep={handleNextStep} handlePreviousStep={handlePreviousStep}/>}
+          {currentStep === 8 && <OwnerStep handleNextStep={handleNextStep} handlePreviousStep={handlePreviousStep} />}
+          {currentStep === 9 && <UserInfoStep handleNextStep={handleNextStep} handlePreviousStep={handlePreviousStep} />}
+          {currentStep === 10 && <FinishStep handleNextStep={handleNextStep} handlePreviousStep={handlePreviousStep} />}
 
-          <div className=''>
-          {currentStep !== 4 ? (
-            <button
-              type="button"
-              onClick={handleNextStep}
-              className="w-3/5 py-[14px] rounded-[4px] bg-white text-base text-primary font-normal leading-[20px]"
-            >
-              Continue
-            </button>
-          ) : (
-            <button
-              type="submit"
-              className="w-3/5 py-[14px] rounded-[4px] bg-white text-base text-primary font-normal leading-[20px]"
-            >
-              Finish
-            </button>
-          )}
-          </div>
         </form>
         </div>
 
@@ -69,66 +73,3 @@ const MultiStepForm = () => {
 };
 
 export default MultiStepForm;
-
-
-
-
-
-
-// import React, { useState } from 'react';
-// import { FormProvider, useForm } from 'react-hook-form';
-// import BusinessStep from './BusinessStep';
-// import OwnerStep from './OwnerStep';
-// import UserInfoStep from './UserInfoStep';
-// import FinishStep from './FinishStep';
-// // import ProgressSteps from './ProgressSteps';
-
-// const MultiStepForm = () => {
-//   const methods = useForm();
-//   const [currentStep, setCurrentStep] = useState(1);
-
-//   const onSubmit = (data) => {
-//     console.log(data);
-//   };
-
-//   const nextStep = () => {
-//     setCurrentStep((prevStep) => prevStep + 1);
-//   };
-
-//   const prevStep = () => {
-//     setCurrentStep((prevStep) => prevStep - 1);
-//   };
-
-//   return (
-//     <div>
-//       <FormProvider {...methods}>
-//         <form onSubmit={methods.handleSubmit(onSubmit)}>
-//           {/* <ProgressSteps/> */}
-//           {currentStep === 1 && <BusinessStep />}
-//           {currentStep === 2 && <OwnerStep />}
-//           {currentStep === 3 && <UserInfoStep />}
-//           {currentStep === 4 && <FinishStep />}
-          
-//           <div className="flex justify-between">
-//             {currentStep > 1 && (
-//               <button type="button" onClick={prevStep} className="btn">
-//                 Previous
-//               </button>
-//             )}
-//             <button type="button" onClick={nextStep} className="btn">
-//               Next
-//             </button>
-//           </div>
-
-//           {currentStep === 2 && (
-//             <input type="submit" value="Submit" className="btn" />
-//           )}
-//         </form>
-//       </FormProvider>
-//     </div>
-//   );
-// };
-
-// export default MultiStepForm;
-
-
