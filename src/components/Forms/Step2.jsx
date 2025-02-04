@@ -20,7 +20,7 @@ const Step2 = ({ handleNextStep, handlePreviousStep }) => {
               Business Start Month
             </label>
             <select
-              {...register("month", { required: "Business Start Month is required" })}
+              {...register("month", { required: true })}
               className="w-full py-[12px] px-[16px] border-[1px] rounded-[4px] bg-primary text-white outline-white mt-[16px]"
             >
               <option value="">Select Month</option>
@@ -31,7 +31,7 @@ const Step2 = ({ handleNextStep, handlePreviousStep }) => {
                 <option key={index} value={month}>{month}</option>
               ))}
             </select>
-            {errors?.month && <p className="text-sm text-red-500">{errors.month.message}</p>}
+            {errors?.month && <p className="text-sm text-red-500">This field is required</p>}
           </div>
 
           {/* Business Start Year */}
@@ -40,7 +40,7 @@ const Step2 = ({ handleNextStep, handlePreviousStep }) => {
               Business Start Year
             </label>
             <select
-              {...register("lastYear", { required: "Business Start Year is required" })}
+              {...register("lastYear", { required: true })}
               className="w-full py-[12px] px-[16px] border-[1px] rounded-[4px] bg-primary text-white outline-white mt-[16px] "
             >
               <option value="">Select Year</option>
@@ -48,7 +48,7 @@ const Step2 = ({ handleNextStep, handlePreviousStep }) => {
                 <option key={year} value={year}>{year}</option>
               ))}
             </select>
-            {errors?.lastYear && <p className="text-sm text-red-500">{errors.lastYear.message}</p>}
+            {errors?.lastYear && <p className="text-sm text-red-500">This field is required</p>}
           </div>
           {/* buttton  */}
           <div className='flex justify-between items-center pt-[61px]'>

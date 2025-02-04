@@ -11,23 +11,25 @@ const UserInfoStep = ({ handleNextStep, handlePreviousStep }) => {
           <div>
             <label className='text-2xl font-medium leading-[24px] text-white' htmlFor="email">Email Address</label>
             <input
-              {...register("email", { required: "Email is required" })}
+              type='email'
+              {...register("email", { required: true })}
               placeholder="Enter Address"
               className="w-full py-[12px] px-[16px] border-[1px] rounded-[4px] bg-primary text-white outline-white mt-[16px]"
             />
             {errors?.email && (
-              <p className="text-sm text-red-500">{errors.email.message}</p>
+              <p className="text-sm text-red-500">This field is required</p>
             )}
           </div>
           <div className='pt-[40px]'>
             <label className='text-2xl font-medium leading-[24px] text-white' htmlFor="phoneNumber">Phone Number</label>
             <input
-              {...register("phoneNumber", { required: "Phone Number is required" })}
+              type='number'
+              {...register("phoneNumber", { required: true })}
               placeholder="Enter Phone number"
               className="w-full py-[12px] px-[16px] border-[1px] rounded-[4px] bg-primary text-white outline-white mt-[16px]"
             />
             {errors?.phoneNumber && (
-              <p className="text-sm text-red-500">{errors.phoneNumber.message}</p>
+              <p className="text-sm text-red-500">This field is required</p>
             )}
             {/* buttton  */}
             <div className='pt-[61px] flex items-center justify-center'>

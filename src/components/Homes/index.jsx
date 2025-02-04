@@ -7,11 +7,17 @@ import EligibilityCriteria from './EligibilityCriteria/EligibilityCriteria';
 import Online from './Online/Online';
 import FinancialSolutions from './FinancialSolutions/FinancialSolutions';
 import Services from './Services/Services';
+import Footer from '../../shared/Footer/Footer';
+import Navbar from '../../shared/Navbar/Navbar';
 // import { CustomerReviews } from './ReviewDemo/ReviewDemo';
 
 const HomeAllComponents = () => {
     return (
         <div>
+            <section>
+                <Navbar/>
+            </section>
+            
             <section>
                 <Banner />
             </section>
@@ -46,6 +52,10 @@ const HomeAllComponents = () => {
 
             <section>
                 <Online />
+            </section>
+            
+            <section>
+                <Footer />
             </section>
         </div>
     );
