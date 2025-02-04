@@ -1,7 +1,7 @@
 import { Menu, X } from 'lucide-react';
 import React, { useState } from 'react';
 import Button from '../../common/Button';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -10,7 +10,10 @@ const Navbar = () => {
             <div className='flex items-center justify-between'>
                 {/* logo  */}
                 <div>
-                    <img src='/assets/images/nav_logo.png' alt='nav logo' width={114} height={35} />
+                    <Link to='/'>
+                        <img src='/assets/images/nav_logo.png' alt='nav logo' width={114} height={35} />
+                    </Link>
+
                 </div>
                 {/* menu  */}
                 <div className='hidden md:block'>
@@ -20,16 +23,14 @@ const Navbar = () => {
                         <NavLink to='/'><li className='text-base font-normal leading-[28px] text-primary hover:text-secondary hover:underline cursor-pointer'>Funding Option</li></NavLink>
                         <NavLink to='/'><li className='text-base font-normal leading-[28px] text-primary hover:text-secondary hover:underline cursor-pointer'>Resources</li></NavLink>
                         <NavLink to="/about-us"><li className='text-base font-normal leading-[28px] text-primary hover:text-secondary hover:underline cursor-pointer'>About Us</li></NavLink>
-
-
-
-
-
                     </ul>
                 </div>
                 {/* button  */}
                 <div >
-                    <Button />
+                    <Link to="/touch-to-funded">
+                        <Button />
+                    </Link>
+
                 </div>
 
                 {/* small device  */}
