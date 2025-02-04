@@ -16,20 +16,24 @@ const MultiStepForm = () => {
   const methods = useForm();
   const [currentStep, setCurrentStep] = useState(1);
 
-  // Handle step change
+  // Handle next step change
   const handleNextStep = () => {
     setCurrentStep((prevStep) => prevStep + 1);
+  };
+  // Handle previous step change
+  const handlePreviousStep = () => {
+    setCurrentStep((prevStep) => prevStep - 1);
   };
 
   // Handle form submission
   const onSubmit = (data) => {
-    console.log(data); // Handle your form submission logic here
+    console.log(data); 
   };
 
   return (
     <div className="container">
       <FormProvider {...methods}>
-        <div className="mb-6"> {/* Added margin to give space for the ProgressSteps */}
+        <div className="mb-6"> 
           <ProgressSteps
             currentStep={currentStep}
             steps={[
@@ -49,35 +53,17 @@ const MultiStepForm = () => {
         
         <div className='px-4 md:px-[50px] lg:px-[100px] xl:px-[150px] 2xl:px-[212px] 3xl:px-[230] 4xl:px-[260px] 5xl:px-[285px]'>
         <form onSubmit={methods.handleSubmit(onSubmit)} className="mt-6 bg-primary rounded-l-[12px]">
-          {currentStep === 1 && <Step1/>}
-          {currentStep === 2 && <Step2/>}
-          {currentStep === 3 && <Step3/>}
-          {currentStep === 4 && <Step4/>}
-          {currentStep === 5 && <Step5/>}
-          {currentStep === 6 && <Step6/>}
-          {currentStep === 7 && <BusinessStep/>}
-          {currentStep === 8 && <OwnerStep />}
-          {currentStep === 9 && <UserInfoStep />}
-          {currentStep === 10 && <FinishStep />}
+          {currentStep === 1 && <Step1 handleNextStep={handleNextStep} handlePreviousStep={handlePreviousStep} />}
+          {currentStep === 2 && <Step2 handleNextStep={handleNextStep} handlePreviousStep={handlePreviousStep} />}
+          {currentStep === 3 && <Step3 handleNextStep={handleNextStep} handlePreviousStep={handlePreviousStep} />}
+          {currentStep === 4 && <Step4 handleNextStep={handleNextStep} handlePreviousStep={handlePreviousStep} />}
+          {currentStep === 5 && <Step5 handleNextStep={handleNextStep} handlePreviousStep={handlePreviousStep} />}
+          {currentStep === 6 && <Step6 handleNextStep={handleNextStep} handlePreviousStep={handlePreviousStep} />}
+          {currentStep === 7 && <BusinessStep handleNextStep={handleNextStep} handlePreviousStep={handlePreviousStep}/>}
+          {currentStep === 8 && <OwnerStep handleNextStep={handleNextStep} handlePreviousStep={handlePreviousStep} />}
+          {currentStep === 9 && <UserInfoStep handleNextStep={handleNextStep} handlePreviousStep={handlePreviousStep} />}
+          {currentStep === 10 && <FinishStep handleNextStep={handleNextStep} handlePreviousStep={handlePreviousStep} />}
 
-          <div className=''>
-          {currentStep !== 10 ? (
-            <button
-              type="button"
-              onClick={handleNextStep}
-              className="w-3/5 py-[14px] rounded-[4px] bg-white text-base text-primary font-normal leading-[20px]"
-            >
-              Continue
-            </button>
-          ) : (
-            <button
-              type="submit"
-              className="w-3/5 py-[14px] rounded-[4px] bg-white text-base text-primary font-normal leading-[20px]"
-            >
-              Finish
-            </button>
-          )}
-          </div>
         </form>
         </div>
 

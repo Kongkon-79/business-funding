@@ -1,7 +1,8 @@
 import React from 'react';
 import { useFormContext } from 'react-hook-form';
+import { HiArrowNarrowLeft } from "react-icons/hi";
 
-const Step3 = () => {
+const Step3 = ({handleNextStep, handlePreviousStep}) => {
   const { register, formState: { errors } } = useFormContext();
 
   return (
@@ -17,6 +18,11 @@ const Step3 = () => {
           {errors?.revenue && (
             <p className="text-sm text-red-500">{errors.revenue.message}</p>
           )}
+          {/* buttton  */}
+          <div className='flex justify-between items-center pt-[61px]'>
+            <button type='button' onClick={handlePreviousStep} className='flex items-center gap-[8px] text-base font-normal leading-[20px] bg-transparent border-[1px] border-white text-white py-[14px] pl-[14px] pr-[19px] rounded-[4px]'> <HiArrowNarrowLeft/> Back</button>
+            <button type='button' onClick={handleNextStep} className='text-base font-normal leading-[20px] bg-white text-primary py-[14px] px-[40px] rounded-[4px]'>Continue</button>
+          </div>
         </div>
         <div className="w-2/5">
           <img src="/assets/images/step3.png" alt="step 3" width={409} height={553} className='w-full'/>

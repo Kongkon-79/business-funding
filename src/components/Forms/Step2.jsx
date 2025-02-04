@@ -1,7 +1,8 @@
 import React from "react";
 import { useFormContext } from "react-hook-form";
+import { HiArrowNarrowLeft } from "react-icons/hi";
 
-const Step2 = () => {
+const Step2 = ({ handleNextStep, handlePreviousStep }) => {
   const { register, formState: { errors } } = useFormContext();
 
   // Generate years dynamically (from 2000 to current year)
@@ -24,7 +25,7 @@ const Step2 = () => {
             >
               <option value="">Select Month</option>
               {[
-                "January", "February", "March", "April", "May", "June", 
+                "January", "February", "March", "April", "May", "June",
                 "July", "August", "September", "October", "November", "December"
               ].map((month, index) => (
                 <option key={index} value={month}>{month}</option>
@@ -49,6 +50,12 @@ const Step2 = () => {
             </select>
             {errors?.lastYear && <p className="text-sm text-red-500">{errors.lastYear.message}</p>}
           </div>
+          {/* buttton  */}
+          <div className='flex justify-between items-center pt-[61px]'>
+            <button type='button' onClick={handlePreviousStep} className='flex items-center gap-[8px] text-base font-normal leading-[20px] bg-transparent border-[1px] border-white text-white py-[14px] pl-[14px] pr-[19px] rounded-[4px]'> <HiArrowNarrowLeft/> Back </button>
+            <button type='button' onClick={handleNextStep} className='text-base font-normal leading-[20px] bg-white text-primary py-[14px] px-[40px] rounded-[4px]'>Continue</button>
+          </div>
+
         </div>
 
         {/* Right Side (Image) */}
@@ -62,4 +69,3 @@ const Step2 = () => {
 
 export default Step2;
 
-  

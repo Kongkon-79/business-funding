@@ -1,7 +1,7 @@
 import React from 'react';
 import { useFormContext } from 'react-hook-form';
 
-const BusinessStep = () => {
+const BusinessStep = ({ handleNextStep, handlePreviousStep }) => {
   const { register, formState: { errors } } = useFormContext();
 
   return (
@@ -17,9 +17,13 @@ const BusinessStep = () => {
           {errors?.businessName && (
             <p className="text-sm text-red-500">{errors.businessName.message}</p>
           )}
+          {/* buttton  */}
+          <div className='pt-[61px] flex items-center justify-center'>
+            <button type='button' onClick={handleNextStep} className='w-full text-base font-normal leading-[20px] bg-white text-primary py-[14px] px-[170px] rounded-[4px]'>Continue</button>
+          </div>
         </div>
         <div className="w-2/5">
-          <img src="/assets/images/business.png" alt="business" width={409} height={553} className='w-full'/>
+          <img src="/assets/images/business.png" alt="business" width={409} height={553} className='w-full' />
         </div>
       </div>
     </>

@@ -1,7 +1,7 @@
 import React from 'react';
 import { useFormContext } from 'react-hook-form';
 
-const Step1 = () => {
+const Step1 = ({handleNextStep, handlePreviousStep}) => {
     const { register, formState: { errors } } = useFormContext();
 
     return (
@@ -16,15 +16,21 @@ const Step1 = () => {
                     <p className='text-base font-normal leading-[30px] text-white/50 pt-[12px]'>Please complete the basic information below to see how much funding you qualify for.</p>
                     <p className='text-base font-normal leading-[30px] text-white/50 pt-[12px] pb-[40px]'>This will not effect your credit.</p>
 
-                    <label className='text-2xl font-medium leading-[24px] text-white' htmlFor="businessName">What is the legal name of your business?</label>
+                    <label className='text-2xl font-medium leading-[24px] text-white' htmlFor="money">How much money are you looking for?</label>
                     <input
-                        {...register("businessName", { required: "Business name is required" })}
-                        placeholder="Enter business name"
+                        {...register("money", { required: "how much money is required" })}
+                        placeholder="$2,500"
                         className="w-full py-[12px] px-[16px] border-[1px] rounded-[4px] bg-primary text-white outline-white mt-[16px]"
                     />
-                    {errors?.businessName && (
-                        <p className="text-sm text-red-500">{errors.businessName.message}</p>
+                    {errors?.money && (
+                        <p className="text-sm text-red-500">{errors.money.message}</p>
                     )}
+
+                    {/* buttton  */}
+                    <div className='pt-[29px]'>
+                        <button type='button' onClick={handleNextStep} className='text-base font-normal leading-[20px] bg-white text-primary py-[14px] px-[65px] rounded-[4px]'>Get Approved</button>
+                    </div>
+
                 </div>
                 <div className="w-2/6">
                     <img src="/assets/images/step1.png" alt="step 1" width={262} height={393} className='w-full' />

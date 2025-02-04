@@ -1,7 +1,8 @@
 import React from "react";
 import { useFormContext } from "react-hook-form";
+import { HiArrowNarrowLeft } from "react-icons/hi";
 
-const Step5 = () => {
+const Step5 = ({handleNextStep, handlePreviousStep}) => {
   const { register, formState: { errors } } = useFormContext();
 
   // Sample business names (modify as needed)
@@ -40,6 +41,11 @@ const Step5 = () => {
           {errors?.score && (
             <p className="text-sm text-red-500 mt-2">{errors.score.message}</p>
           )}
+          {/* buttton  */}
+          <div className='flex justify-between items-center pt-[61px]'>
+            <button type='button' onClick={handlePreviousStep} className='flex items-center gap-[8px] text-base font-normal leading-[20px] bg-transparent border-[1px] border-white text-white py-[14px] pl-[14px] pr-[19px] rounded-[4px]'> <HiArrowNarrowLeft/> Back</button>
+            <button type='button' onClick={handleNextStep} className='text-base font-normal leading-[20px] bg-white text-primary py-[14px] px-[40px] rounded-[4px]'>Continue</button>
+          </div>
         </div>
 
         {/* Right Side (Image) */}
