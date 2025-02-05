@@ -3,7 +3,7 @@ import HomeAllComponents from '../components/Homes';
 
 const Home = () => {
     return (
-        <div>
+        <div className=''>
             <HomeAllComponents/>
         </div>
     );

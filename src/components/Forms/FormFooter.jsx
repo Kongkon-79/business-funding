@@ -3,7 +3,7 @@ import { Facebook, Instagram, Linkedin } from 'lucide-react';
 
 const FormFooter = () => {
     return (
-        <div className='px-4 md:px-[50px] lg:px-[100px] xl:px-[150px] 2xl:px-[212px] 3xl:px-[230] 4xl:px-[260px] 5xl:px-[285px]'>
+        <div className='container'>
             <div className='flex items-center justify-between pt-[27px] pb-[36px] border-t-[1px] border-primary/50 mt-[27px]'>
             <p className='text-base font-normal leading-[55px] text-primary/50'>@ 2025 Business Funding, All eights Reseerved</p>
             <div className='flex items-center gap-[18px] pt-[16px]'>

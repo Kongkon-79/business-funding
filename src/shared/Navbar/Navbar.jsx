@@ -6,12 +6,12 @@ import { Link, NavLink } from 'react-router-dom';
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
     return (
-        <div className='px-4 md:px-[50px] lg:px-[100px] xl:px-[150px] 2xl:px-[212px] 3xl:px-[230] 4xl:px-[260px] 5xl:px-[285px] py-[15px] md:pt-[35px] lg:pt-[47px] md:pb-[45px] lg:pb-[65px] roboto_font bg-white sticky top-0 z-50'>
+        <div className='container py-[15px] md:pt-[35px] lg:pt-[47px] md:pb-[45px] lg:pb-[65px] roboto_font bg-white sticky top-0 z-50'>
             <div className='flex items-center justify-between'>
                 {/* logo  */}
                 <div>
                     <Link to='/'>
-                        <img src='/assets/images/nav_logo.png' alt='nav logo' width={114} height={35} />
+                        <img src='/assets/images/nav_logo.png' alt='nav logo' width={193} height={44}  />
                     </Link>
 
                 </div>
@@ -42,7 +42,7 @@ const Navbar = () => {
                 </div>
 
             </div>
-            <div className={`${isOpen ? "w-[70%] left-0" : "w-full -left-[100%]"} h-[40%] fixed top-[77px] z-20 bg-white`}>
+            <div className={`${isOpen ? "w-[70%] left-0" : "w-full -left-[100%]"} h-[40%] fixed top-[0px] z-20 bg-white`}>
                 {
                     isOpen && <ul className='flex flex-col items-center gap-[32px]'>
                         <li className='text-base font-normal leading-[28px] text-primary hover:text-secondary hover:underline cursor-pointer pt-4'>Home</li>

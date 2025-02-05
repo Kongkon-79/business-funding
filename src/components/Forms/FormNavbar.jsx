@@ -5,7 +5,7 @@ import { Link, NavLink } from 'react-router-dom';
 const FormNavbar = () => {
     const [isOpen, setIsOpen] = useState(false);
     return (
-        <div className='px-4 md:px-[50px] lg:px-[100px] xl:px-[150px] 2xl:px-[212px] 3xl:px-[230] 4xl:px-[260px] 5xl:px-[285px] py-[15px] md:py-[20px] lg:py-[25px]  roboto_font bg-white sticky top-0 z-50'>
+        <div className='container py-[15px] md:py-[20px] lg:py-[25px]  roboto_font bg-white sticky top-0 z-50'>
             <div className='flex items-center justify-between'>
                 {/* logo  */}
                 <div>
@@ -26,7 +26,7 @@ const FormNavbar = () => {
                 </div>
                 {/* button  */}
                 <div >
-                    <button className='text-xl font-semibold leading-[32px] text-primary'>(603) 555-0123</button>
+                    <button className='text-xl font-semibold leading-[32px] text-primary'> (800) 919-5351</button>
 
                 </div>
 

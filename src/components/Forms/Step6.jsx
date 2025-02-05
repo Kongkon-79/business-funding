@@ -6,7 +6,7 @@ const Step6 = ({handleNextStep, handlePreviousStep}) => {
             <div className="w-full flex items-center justify-between gap-[65px]">
                 <div className="w-3/5 pl-[47px] pr-[65px]">
                     <div className='w-full flex justify-center items-center pb-[48px]'>
-                        <img src="/assets/images/step1_logo.png" alt='logo' width={114} height={35} />
+                        <img src="/assets/images/nav_logo.png" alt='logo' width={193} height={44} />
                     </div>
                     <h4 className='text-[48px] font-medium leading-[48px] text-white text-center'>
                         Thank You

@@ -4,7 +4,7 @@ import { Facebook, Instagram, Linkedin } from 'lucide-react';
 
 const Footer = () => {
     return (
-        <div className='px-4 md:px-[50px] lg:px-[100px] xl:px-[150px] 2xl:px-[212px] padding_top roboto_font pb-[69px]'>
+        <div className='container padding_top roboto_font pb-[69px]'>
             <div className='flex flex-col md:flex-row items-center justify-between gap-8 md:gap-0'>
                 <h5 className='text-[24px] md:text-[28px] lg:text-[32px] font-normal leading-[26px] md:leading-[32px] lg:leading-[40px] text-primary'>Meet Capitalized, obtaining <br className='hidden lg:block'/>
                     working capital for your <br className='hidden lg:block'/>
@@ -17,7 +17,7 @@ const Footer = () => {
             <div className='pt-[40px]'>
                 <div className='grid grid-cols-1 md:grid-cols-10'>
                     <div className='md:col-span-4 pr-[107px]'>
-                        <img src="/assets/images/footer_logo.png" alt='footer logo' width={114} height={35} />
+                        <img src="/assets/images/nav_logo.png" alt='footer logo' width={193} height={44}  />
                         <p className='text-xl font-normal leading-[24px] text-secondary/70 pt-[27px]'>Business funding made fast and
                             simple for all types of business
                             needs, and credit situations.</p>
@@ -59,7 +59,7 @@ const Footer = () => {
                         <h5 className='text-2xl font-medium leading-[30px] text-primary'>Contact Us</h5>
                         <ul className='pt-[10px]'>
                             <li className='text-base font-normal leading-[28px] text-secondary/70 py-1'>Email: example@gmail.com</li>
-                            <li className='text-base font-normal leading-[28px] text-secondary/70 py-1'>Phone: (603) 555-0123 </li>
+                            <li className='text-base font-normal leading-[28px] text-secondary/70 py-1'>Phone:  (800) 919-5351</li>
                             <li className='text-base font-normal leading-[28px] text-secondary/70 py-1'>Physical Address: New York</li>
                         </ul>
                     </div>
