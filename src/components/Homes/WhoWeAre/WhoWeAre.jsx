@@ -4,7 +4,7 @@ import { headingTexts } from '../../../utils/heading-text';
 
 const WhoWeAre = () => {
     return (
-        <div className='px-4 md:px-[50px] lg:px-[100px] xl:px-[150px] 2xl:px-[212px] padding_top roboto_font'>
+        <div className='container padding_top roboto_font'>
             <div className='flex items-center justify-center pb-[44px]'>
                 <Heading text={headingTexts.whoWeAre__headingText} />
             </div>

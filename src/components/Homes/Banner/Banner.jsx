@@ -15,7 +15,7 @@ const Banner = () => {
                 <h5 className='text-xl md:text-2xl lg:text-[32px] font-normal leading-[40px] text-black pt-[20px] md:pt-[30px] lg:pt-[38px]'>Talk to a <span className='py-[5px] px-[8px] bg-primary rounded-[8px] font-medium text-white'>Financial Advisor</span></h5>
                 <button className='flex items-center gap-[15px] pt-[18px]'>
                     <img src='/assets/images/phone_icon.png' alt='phone icon' width={24} height={24}/>
-                    <span className='text-lg md:text-xl font-semibold leading-[32px] text-primary'>(603) 555-0123</span>
+                    <span className='text-lg md:text-xl font-semibold leading-[32px] text-primary'> (800) 919-5351</span>
                 </button>
 
             </div>

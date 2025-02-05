@@ -2,7 +2,7 @@ import React from 'react';
 
 const Online = () => {
     return (
-        <div className='px-4 md:px-[50px] lg:px-[100px] xl:px-[150px] 2xl:px-[212px] padding_top roboto_font'>
+        <div className='container padding_top roboto_font'>
             <div className='grid grid-cols-1 md:grid-cols-2 gap-[81px]'>
                 <div className='md:col-span-1'>
                     <img src='/assets/images/online.png' alt='online' width={476} height={376} />
@@ -14,7 +14,7 @@ const Online = () => {
                         people to talk to.</h2>
                         <p className='text-base font-normal leading-[20px] text-secondary/50 pt-[24px]'>Your dedicated, U.S. based loan advisor is available to help you 
                         every step of the way.</p>
-                        <p className='text-base font-normal leading-[20px] text-black pt-[32px]'>Call Us: <span className='text-[#225C93] font-semibold'>(603) 555-0123</span></p>
+                        <p className='text-base font-normal leading-[20px] text-black pt-[32px]'>Call Us: <span className='text-[#225C93] font-semibold'> (800) 919-5351</span></p>
                 </div>
             </div>
         </div>
