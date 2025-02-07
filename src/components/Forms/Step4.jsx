@@ -39,7 +39,7 @@ const Step4 = ({handleNextStep, handlePreviousStep}) => {
           </div>
 
           {errors?.payment && (
-            <p className="text-sm text-red-500 mt-2">This field is required</p>
+            <p className="text-sm text-red-500 mt-2 text-center">This field is required</p>
           )}
           {/* buttton  */}
           <div className='flex justify-between items-center pt-[40px]'>

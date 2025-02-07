@@ -21,7 +21,7 @@ const Step2 = ({ handleNextStep, handlePreviousStep }) => {
             </label>
             <select
               {...register("month", { required: true })}
-              className="w-full py-[12px] px-[16px] border-[1px] rounded-[4px] bg-primary text-white outline-white mt-[16px]"
+              className="w-full py-[12px] px-[16px] border-[1px] rounded-[4px] bg-primary text-white outline-white mt-[16px] mb-1"
             >
               <option value="">Select Month</option>
               {[
@@ -41,7 +41,7 @@ const Step2 = ({ handleNextStep, handlePreviousStep }) => {
             </label>
             <select
               {...register("lastYear", { required: true })}
-              className="w-full py-[12px] px-[16px] border-[1px] rounded-[4px] bg-primary text-white outline-white mt-[16px] "
+              className="w-full py-[12px] px-[16px] border-[1px] rounded-[4px] bg-primary text-white outline-white mt-[16px] mb-1"
             >
               <option value="">Select Year</option>
               {years.map((year) => (

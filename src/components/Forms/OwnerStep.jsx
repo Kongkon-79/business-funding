@@ -14,7 +14,7 @@ const OwnerStep = ({ handleNextStep, handlePreviousStep }) => {
             type='text'
               {...register("firstName", { required: true })}
               placeholder="Enter first name"
-              className="w-full py-[12px] px-[16px] border-[1px] rounded-[4px] bg-primary text-white outline-white mt-[16px]"
+              className="w-full py-[12px] px-[16px] border-[1px] rounded-[4px] bg-primary text-white outline-white mt-[16px] mb-1"
             />
             {errors?.firstName && (
               <p className="text-sm text-red-500">This field is required</p>
@@ -26,7 +26,7 @@ const OwnerStep = ({ handleNextStep, handlePreviousStep }) => {
             type='text'
               {...register("lastName", { required: true })}
               placeholder="Enter last name"
-              className="w-full py-[12px] px-[16px] border-[1px] rounded-[4px] bg-primary text-white outline-white mt-[16px]"
+              className="w-full py-[12px] px-[16px] border-[1px] rounded-[4px] bg-primary text-white outline-white mt-[16px] mb-1"
             />
             {errors?.lastName && (
               <p className="text-sm text-red-500">This field is required</p>

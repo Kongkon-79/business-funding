@@ -12,9 +12,9 @@ const Step3 = ({handleNextStep, handlePreviousStep}) => {
           <label className='text-2xl font-medium leading-[24px] text-white' htmlFor="revenue">What is your average monthly revenue?</label>
           <input
             {...register("revenue", { required: true })}
-            type='number'
+            type='text'
             placeholder="$25,000"
-            className="w-full py-[12px] px-[16px] border-[1px] rounded-[4px] bg-primary text-white outline-white mt-[16px]"
+            className="w-full py-[12px] px-[16px] border-[1px] rounded-[4px] bg-primary text-white outline-white mt-[16px] mb-1"
           />
           {errors?.revenue && (
             <p className="text-sm text-red-500">This field is required</p>

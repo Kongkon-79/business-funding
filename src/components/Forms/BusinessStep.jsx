@@ -13,7 +13,7 @@ const BusinessStep = ({ handleNextStep, handlePreviousStep }) => {
           type='text'
             {...register("businessName", { required: true })}
             placeholder="Enter business name"
-            className="w-full py-[12px] px-[16px] border-[1px] rounded-[4px] bg-primary text-white outline-white mt-[16px]"
+            className="w-full py-[12px] px-[16px] border-[1px] rounded-[4px] bg-primary text-white outline-white mt-[16px] mb-1"
           />
           {errors?.businessName && (
             <p className="text-sm text-red-500">This field is required</p>

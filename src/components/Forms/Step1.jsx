@@ -18,10 +18,10 @@ const Step1 = ({handleNextStep, handlePreviousStep}) => {
 
                     <label className='text-2xl font-medium leading-[24px] text-white' htmlFor="money">How much money are you looking for?</label>
                     <input
-                        type='number'
+                        type='text'
                         {...register("money", { required: true })}
                         placeholder="$2,500"
-                        className="w-full py-[12px] px-[16px] border-[1px] rounded-[4px] bg-primary text-white outline-white mt-[16px]"
+                        className="w-full py-[12px] px-[16px] border-[1px] rounded-[4px] bg-primary text-white outline-white mt-[16px] mb-1"
                     />
                     {errors?.money && (
                         <p className="text-sm text-red-500">This field is required</p>
