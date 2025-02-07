@@ -55,9 +55,9 @@ const Step5 = ({handleNextStep, handlePreviousStep}) => {
             <option value="" disabled selected>
               Select One
             </option>
-            {scoreNames.map((data) => (
-              <option key={data.id} value={data.value}>
-                {data.name}
+            {scoreNames?.map((data) => (
+              <option key={data?.id} value={data?.value}>
+                {data?.name}
               </option>
             ))}
           </select>

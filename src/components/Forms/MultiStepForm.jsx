@@ -47,7 +47,7 @@ const MultiStepForm = () => {
       timer: 1500
     });
     methods.reset();
-    navigate("/")
+    navigate("/second-step")
   };
 
   return (

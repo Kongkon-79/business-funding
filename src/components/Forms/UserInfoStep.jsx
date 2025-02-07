@@ -14,7 +14,7 @@ const UserInfoStep = ({ handleNextStep, handlePreviousStep }) => {
               type='email'
               {...register("email", { required: true })}
               placeholder="Enter Address"
-              className="w-full py-[12px] px-[16px] border-[1px] rounded-[4px] bg-primary text-white outline-white mt-[16px]"
+              className="w-full py-[12px] px-[16px] border-[1px] rounded-[4px] bg-primary text-white outline-white mt-[16px] mb-1"
             />
             {errors?.email && (
               <p className="text-sm text-red-500">This field is required</p>
@@ -23,10 +23,10 @@ const UserInfoStep = ({ handleNextStep, handlePreviousStep }) => {
           <div className='pt-[40px]'>
             <label className='text-2xl font-medium leading-[24px] text-white' htmlFor="phoneNumber">Phone Number</label>
             <input
-              type='number'
+              type='text'
               {...register("phoneNumber", { required: true })}
               placeholder="Enter Phone number"
-              className="w-full py-[12px] px-[16px] border-[1px] rounded-[4px] bg-primary text-white outline-white mt-[16px]"
+              className="w-full py-[12px] px-[16px] border-[1px] rounded-[4px] bg-primary text-white outline-white mt-[16px] mb-1"
             />
             {errors?.phoneNumber && (
               <p className="text-sm text-red-500">This field is required</p>
