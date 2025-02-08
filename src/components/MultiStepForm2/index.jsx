@@ -67,7 +67,7 @@ const MultiStepFormAllComponents2 = () => {
             <div className='container '>
                 {/* navbar part  */}
                 <section>
-                    <Navbar/>
+                    <Navbar />
                 </section>
                 <FormProvider {...methods}>
                     <div>
