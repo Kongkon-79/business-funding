@@ -23,9 +23,9 @@ const WhyChooseUs = () => {
                             {hoveredCard === data.id ? (
                                 <div className='absolute top-0 left-0 w-full h-full bg-[#225C93] rounded-[4px] flex items-center justify-start pl-[40px] pr-[20px]'>
                                     <ul className='list-disc text-white text-left'>
-                                        <li className='text-base font-semibold leading-[24px]'>Get approved in minutes, not weeks.</li>
-                                        <li className='text-base font-semibold leading-[24px]'>Simple online application with no unnecessary paperwork.</li>
-                                        <li className='text-base font-semibold leading-[24px]'>Funds deposited within 24 hours after approval.</li>
+                                        <li className='text-base font-semibold leading-[24px]'>{data?.list1}</li>
+                                        <li className='text-base font-semibold leading-[24px]'>{data?.list2}</li>
+                                        <li className='text-base font-semibold leading-[24px]'>{data?.list3}</li>
                                     </ul>
                                 </div>
                             ) : (
