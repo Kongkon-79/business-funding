@@ -6,7 +6,7 @@ import { Link, NavLink } from 'react-router-dom';
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
     return (
-        <div className='container py-[15px] md:pt-[35px] lg:pt-[47px] md:pb-[45px] lg:pb-[65px] roboto_font bg-white sticky -top-1 z-50'>
+        <div className='container py-[15px] md:py-[20px] lg:py-[25px] xl:py-[30px] roboto_font bg-white sticky -top-1 z-50'>
             <div className='flex items-center justify-between'>
                 {/* logo  */}
                 <div>
