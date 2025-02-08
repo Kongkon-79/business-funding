@@ -42,18 +42,30 @@ const Navbar = () => {
                 </div>
 
             </div>
-            <div className={`${isOpen ? "w-[70%] right-0" : "w-full -right-[100%]"} h-[50%] fixed -top-1 z-20 bg-white`}>
+            <div className={`${isOpen ? "w-[70%] right-0" : "w-full -right-[100%]"} h-[60%] fixed -top-1 z-20 bg-white`}>
                 {
-                    isOpen && <ul className='flex flex-col items-center gap-[32px]'>
-                        <div className='w-full flex items-center justify-start pl-4 pt-2'>
-                            <X onClick={() => setIsOpen(!isOpen)} />
+                    isOpen && (
+                        <div>
+                            <ul className='flex flex-col items-center gap-[32px]'>
+                                <div className='w-full flex items-center justify-between px-4 pt-4'>
+                                    <div>
+                                        <X onClick={() => setIsOpen(!isOpen)} />
+                                    </div>
+                                    <div>
+                                        <Link to="/touch-to-funded">
+                                            <Button />
+                                        </Link>
+                                    </div>
+                                </div>
+                                <li className='text-base font-normal leading-[24px] md:leading-[28px] text-primary hover:text-secondary hover:underline cursor-pointer'>Home</li>
+                                <li className='text-base font-normal leading-[24px] md:leading-[28px] text-primary hover:text-secondary hover:underline cursor-pointer'>How it Works</li>
+                                <li className='text-base font-normal leading-[24px] md:leading-[28px] text-primary hover:text-secondary hover:underline cursor-pointer'>Funding Option</li>
+                                <li className='text-base font-normal leading-[24px] md:leading-[28px] text-primary hover:text-secondary hover:underline cursor-pointer'>Resources</li>
+                                <li className='text-base font-normal leading-[24px] md:leading-[28px] text-primary hover:text-secondary hover:underline cursor-pointer'>About Us</li>
+                            </ul>
+
                         </div>
-                        <li className='text-base font-normal leading-[24px] md:leading-[28px] text-primary hover:text-secondary hover:underline cursor-pointer'>Home</li>
-                        <li className='text-base font-normal leading-[24px] md:leading-[28px] text-primary hover:text-secondary hover:underline cursor-pointer'>How it Works</li>
-                        <li className='text-base font-normal leading-[24px] md:leading-[28px] text-primary hover:text-secondary hover:underline cursor-pointer'>Funding Option</li>
-                        <li className='text-base font-normal leading-[24px] md:leading-[28px] text-primary hover:text-secondary hover:underline cursor-pointer'>Resources</li>
-                        <li className='text-base font-normal leading-[24px] md:leading-[28px] text-primary hover:text-secondary hover:underline cursor-pointer'>About Us</li>
-                    </ul>
+                    )
                 }
             </div>
             {/* small device end  */}

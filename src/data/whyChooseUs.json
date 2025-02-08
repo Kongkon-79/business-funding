@@ -2,31 +2,49 @@
     {
         "id": 1,
         "img": "/assets/images/whu1.png",
-        "title": "Fast & Hassle Free Funding"
+        "title": "Fast & Hassle Free Funding",
+        "list1" : "Get approved in minutes, not weeks.",
+        "list2" : "Simple online application with no unnecessary paperwork.",
+        "list3" : "Funds deposited within 24 hours after approval."
     },
     {
         "id": 2,
         "img": "/assets/images/whu2.png",
-        "title": "Flexible Financing Solutions"
+        "title": "Flexible Financing Solutions",
+        "list1" : "Business loans, lines of credit, invoice factoring & more.",
+        "list2" : "Tailored repayment plans to fit your business needs.",
+        "list3" : "No hidden fees—transparent pricing & terms."
     },
     {
         "id": 3,
         "img": "/assets/images/whu3.png",
-        "title": "High Approval Rates"
+        "title": "High Approval Rates",
+        "list1" : "We work with businesses of all credit types.",
+        "list2" : "Funding available for startups, growing businesses, and enterprises.",
+        "list3" : "Minimum requirements to qualify, making funding accessible."
     },
     {
         "id": 4,
         "img": "/assets/images/whu4.png",
-        "title": "Trusted by Thousands of Businesses"
+        "title": "Trusted by Thousands of Businesses",
+        "list1" : "5-star rated customer service & thousands of satisfied clients.",
+        "list2" : "Dedicated loan advisors to guide you every step of the way.",
+        "list3" : "Strong partnerships with leading financial institutions."
     },
     {
         "id": 5,
         "img": "/assets/images/whu5.png",
-        "title": "Secure & Reliable"
+        "title": "Secure & Reliable",
+        "list1" : "Bank-level encryption for data protection.",
+        "list2" : "Fully licensed & compliant with financial regulations.",
+        "list3" : "Your information stays 100% private & secure."
     },
     {
         "id": 6,
         "img": "/assets/images/whu6.png",
-        "title": "Total Transparency"
+        "title": "Total Transparency",
+        "list1" : "Get approved in minutes, not weeks.",
+        "list2" : "Simple online application with no unnecessary paperwork.",
+        "list3" : "Funds deposited within 24 hours after approval."
     }
 ]
