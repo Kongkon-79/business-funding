@@ -75,7 +75,7 @@ const MultiStepForm = () => {
         </div>
 
         <div className='container'>
-          <form onSubmit={methods.handleSubmit(onSubmit)} className="mt-6 bg-primary rounded-l-[12px]">
+          <form onSubmit={methods.handleSubmit(onSubmit)} className="mt-6 bg-primary rounded-[12px] md:rounded-l-[12px]">
             {currentStep === 1 && <Step1 handleNextStep={handleNextStep} handlePreviousStep={handlePreviousStep} />}
             {currentStep === 2 && <Step2 handleNextStep={handleNextStep} handlePreviousStep={handlePreviousStep} />}
             {currentStep === 3 && <Step3 handleNextStep={handleNextStep} handlePreviousStep={handlePreviousStep} />}

@@ -39,10 +39,13 @@ const FormNavbar = () => {
                 </div>
 
             </div>
-            <div className={`${isOpen ? "w-[70%] left-0" : "w-full -left-[100%]"} h-[40%] fixed top-[77px] z-20 bg-white`}>
+            <div className={`${isOpen ? "w-[70%] right-0" : "w-full -right-[100%]"} h-[50%] fixed top-0 z-20 bg-white`}>
                 {
                     isOpen && <ul className='flex flex-col items-center gap-[32px]'>
-                        <li className='text-base font-normal leading-[28px] text-primary hover:text-secondary hover:underline cursor-pointer pt-4'>Home</li>
+                        <div className='w-full flex items-start justify-start pt-3 pl-4'>
+                            <X onClick={() => setIsOpen(!isOpen)} />
+                        </div>
+                        <li className='text-base font-normal leading-[28px] text-primary hover:text-secondary hover:underline cursor-pointer pt-2'>Home</li>
                         <li className='text-base font-normal leading-[28px] text-primary hover:text-secondary hover:underline cursor-pointer'>How it Works</li>
                         <li className='text-base font-normal leading-[28px] text-primary hover:text-secondary hover:underline cursor-pointer'>Funding Option</li>
                         <li className='text-base font-normal leading-[28px] text-primary hover:text-secondary hover:underline cursor-pointer'>Resources</li>
