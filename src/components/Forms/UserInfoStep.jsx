@@ -21,14 +21,14 @@ const UserInfoStep = ({ handleNextStep }) => {
             )}
           </div>
           <div className='pt-[20px] md:pt-[30px] lg:pt-[40px]'>
-            <label className='text-xl md:text-2xl font-medium leading-[24px] text-white' htmlFor="phoneNumber">Phone Number</label>
+            <label className='text-xl md:text-2xl font-medium leading-[24px] text-white' htmlFor="phone">Phone Number</label>
             <input
               type='text'
-              {...register("phoneNumber", { required: true })}
+              {...register("phone", { required: true })}
               placeholder="Enter Phone number"
               className="w-full py-[12px] px-[16px] border-[1px] rounded-[4px] bg-primary text-white outline-white mt-[16px] mb-1"
             />
-            {errors?.phoneNumber && (
+            {errors?.phone && (
               <p className="text-sm text-red-500">This field is required</p>
             )}
             {/* buttton  */}

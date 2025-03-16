@@ -16,11 +16,11 @@ const Step2 = ({ handleNextStep, handlePreviousStep }) => {
         <div className="md:col-span-3 flex flex-col justify-center pr-[20px] md:pr-0 pl-[20px] md:pl-[34px] lg:pl-[47px] ">
           {/* Business Start Month */}
           <div>
-            <label className="text-xl md:text-2xl font-medium leading-[24px] text-white" htmlFor="month">
+            <label className="text-xl md:text-2xl font-medium leading-[24px] text-white" htmlFor="startMonth">
               Business Start Month
             </label>
             <select
-              {...register("month", { required: true })}
+              {...register("startMonth", { required: true })}
               className="w-full py-[12px] px-[16px] border-[1px] rounded-[4px] bg-primary text-white outline-white  mt-[8px] md:mt-[12px] lg:mt-[16px] mb-1"
             >
               <option value="">Select Month</option>
@@ -31,16 +31,16 @@ const Step2 = ({ handleNextStep, handlePreviousStep }) => {
                 <option key={index} value={month}>{month}</option>
               ))}
             </select>
-            {errors?.month && <p className="text-sm text-red-500">This field is required</p>}
+            {errors?.startMonth && <p className="text-sm text-red-500">This field is required</p>}
           </div>
 
           {/* Business Start Year */}
           <div className="pt-[20px] md:pt-[30px] lg:pt-[40px]">
-            <label className="text-xl md:text-2xl font-medium leading-[24px] text-white" htmlFor="lastYear">
+            <label className="text-xl md:text-2xl font-medium leading-[24px] text-white" htmlFor="startYear">
               Business Start Year
             </label>
             <select
-              {...register("lastYear", { required: true })}
+              {...register("startYear", { required: true })}
               className="w-full py-[12px] px-[16px] border-[1px] rounded-[4px] bg-primary text-white outline-white mt-[8px] md:mt-[12px] lg:mt-[16px] mb-1"
             >
               <option  value="">Select Year</option>
@@ -48,7 +48,7 @@ const Step2 = ({ handleNextStep, handlePreviousStep }) => {
                 <option key={year} value={year}>{year}</option>
               ))}
             </select>
-            {errors?.lastYear && <p className="text-sm text-red-500">This field is required</p>}
+            {errors?.startYear && <p className="text-sm text-red-500">This field is required</p>}
           </div>
           {/* buttton  */}
           <div className='flex justify-between items-center pt-[30px] md:pt-[45px] lg:pt-[61px]'>
