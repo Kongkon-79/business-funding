@@ -10,7 +10,7 @@ const Step4 = ({handleNextStep, handlePreviousStep}) => {
       <div className="grid grid-cols-1 md:grid-cols-5 gap-[30px] md:gap-[45px] lg:gap-[65px] py-[20px] md:py-0">
         {/* Left Side (Form Fields) */}
         <div className="md:col-span-3 flex flex-col justify-center pr-[20px] md:pr-0 pl-[20px] md:pl-[34px] lg:pl-[47px]">
-          <label htmlFor="payment" className="text-xl md:text-2xl font-medium leading-[24px] text-white">
+          <label htmlFor="creditCardPayment" className="text-xl md:text-2xl font-medium leading-[24px] text-white">
             Does your business accept credit cards as a form of payment?
           </label>
           
@@ -19,8 +19,8 @@ const Step4 = ({handleNextStep, handlePreviousStep}) => {
             <label className="flex items-center gap-2 text-white text-lg cursor-pointer">
               <input
                 type="radio"
-                value="yes"
-                {...register("payment", { required: true })}
+                value="Yes"
+                {...register("creditCardPayment", { required: true })}
                 className="w-5 h-5 accent-primary"
               />
               Yes
@@ -30,15 +30,15 @@ const Step4 = ({handleNextStep, handlePreviousStep}) => {
             <label className="flex items-center gap-2 text-white text-lg cursor-pointer">
               <input
                 type="radio"
-                value="no"
-                {...register("payment", { required: true })}
+                value="No"
+                {...register("creditCardPayment", { required: true })}
                 className="w-5 h-5 accent-primary"
               />
               No
             </label>
           </div>
 
-          {errors?.payment && (
+          {errors?.creditCardPayment && (
             <p className="text-sm text-red-500 mt-2 text-center">This field is required</p>
           )}
           {/* buttton  */}
